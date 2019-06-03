@@ -1,5 +1,7 @@
 # Simple excuse generator
 
+**Project URL:** [Click to see live demo!](https://jferragut.github.io/excuse-generator/)
+
 A simple excuse generator built in vanilla Javascript, Bootstrap, NPM, HTML, and SCSS. The application refreshes excuse onLoad, so to see a new excuse you can either refresh the page or click the refresh button.
 
 
