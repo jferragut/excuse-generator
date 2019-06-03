@@ -1,16 +1,30 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
-/* 
-    body{
-        background: #BDBDBD;
-    }
-    
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+$navHeight: 56px;
 
-*/
+/* VH Conversion Function */
+
+@function calcVh($target) {
+  $vh-context: (1000 * 0.01) * 1px;
+  @return ($target/$vh-context) * 1vh;
+}
+
+.wrap {
+  height: 100vh - calcVh($navHeight);
+  width: 100vw;
+}
+
+header,
+footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+
+header {
+  top: 0;
+}
+
+footer {
+  bottom: 0;
+}
